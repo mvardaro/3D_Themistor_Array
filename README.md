@@ -1,6 +1,6 @@
 # 3D Thermistor Array
 
-The OOI Cabled Array, maintained and operated by the University of Washington, is delivering real-time data from a [3D Thermistor Array](http://www.interactiveoceans.washington.edu/story/Thermistor_Array) deployed inside the caldera of [Axial Volcano](http://www.interactiveoceans.washington.edu/story/Axial_Caldera_PN3B_Fully_Installed). The 3D array consists of 24 temperature sensors at fixed [x, y and z positions](https://github.com/friedrichknuth/3D_Themistory_Array/blob/master/info/frame_geometry.pdf). A new measurement is made every ten seconds and data is available since 2014 up until present. The data can be retrieved in NetCDF or JSON formats. See examples under [starter_scripts](https://github.com/friedrichknuth/3D_Themistory_Array/tree/master/starter_scripts).
+The OOI Cabled Array, maintained and operated by the University of Washington, is delivering real-time data from a [3D Thermistor Array](http://www.interactiveoceans.washington.edu/story/Thermistor_Array) deployed inside the caldera of [Axial Volcano](http://www.interactiveoceans.washington.edu/story/Axial_Caldera_PN3B_Fully_Installed). The 3D array consists of 24 temperature sensors at fixed [x, y and z positions](https://github.com/friedrichknuth/3D_Themistory_Array/blob/master/info/frame_geometry.pdf). A new measurement is made every ten seconds and data is available since 2014 up until present. The data can be retrieved in NetCDF or JSON formats. See examples under [scripts](https://github.com/friedrichknuth/3D_Themistory_Array/tree/master/scripts).
 
 <img src="./img/im1.jpg" width=500>
 
@@ -36,3 +36,24 @@ The problem could be tackled in three stages:
 - [ytini](http://www.ytini.com/) - which is [yt](http://yt-project.org/doc/index.html) + [houdini](https://www.sidefx.com/).
 
 - [Hardware Accelerated Volume Rendering](http://paulbourke.net/miscellaneous/glvol/) - Volume randering using OpenGL
+
+## Initial Observations
+
+From quick look plots in the UI, found [here](https://ooinet.oceanobservatories.org/data_access/#RS03ASHS-MJ03B-07-TMPSFA301/streamed_tmpsf-sample).
+
+### Time Range: 2017/09/04 10:00 to 2017/09/05 10:00
+
+### Bottom Pressure
+<img src="./img/botpt.png" width=800>
+
+### Thermistor 1
+<img src="./img/t1.png" width=800>
+
+### Thermistor 3
+<img src="./img/t3.png" width=800>
+
+### Observations
+
+- temperature changes are abrupt
+- the hottest thermistor (3) behaves opposite to other thermistors measuring warm diffuse flow (1)
+- the system is controlled by tides
